@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Privacy Policy - Scrybe</title>
+    <meta name="description" content="Privacy Policy for the Scrybe browser extension and hosted Scrybe backend.">
+    <link rel="icon" href="/assets/scrybe-128.png">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="/">
+          <img src="/assets/scrybe-128.png" alt="">
+          <span>Scrybe</span>
+        </a>
+        <div class="nav-links">
+          <a href="/#features">Features</a>
+          <a href="/#self-host">Self-hosting</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="/support/">Support</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <span class="eyebrow">Privacy Policy</span>
+        <h1>Scrybe Privacy Policy</h1>
+        <p class="lead">This policy explains how the Scrybe browser extension and the hosted Scrybe backend handle data.</p>
+      </section>
+
+      <section class="policy">
+        <article class="document">
+          <p><strong>Last updated:</strong> June 28, 2026</p>
+          <p>This Privacy Policy applies to the Scrybe browser extension and to the hosted Scrybe backend operated by Shadoweb at <strong>https://scrybe-api.shadoweb.fr</strong>. If you configure the extension to use a self-hosted or third-party backend, that backend is operated independently and is not covered by this Privacy Policy.</p>
+
+          <h2>1. Summary</h2>
+          <p>Scrybe is designed so that bookmark and history content is encrypted by the browser extension before it is sent to the backend. The hosted backend stores encrypted records and account/device metadata needed to provide sync. The hosted backend is not designed to decrypt your bookmarks, history entries, recovery bootstrap data, or pairing bootstrap data.</p>
+
+          <h2>2. Data Handled by the Extension</h2>
+          <p>The extension may process the following data locally in your browser:</p>
+          <ul>
+            <li>Bookmark URLs, page titles, favicon URLs, and user-edited bookmark names.</li>
+            <li>Browsing history URLs, page titles, favicons, and visit timestamps.</li>
+            <li>Extension settings, including the configured backend URL.</li>
+            <li>Anonymous account identifiers, device identifiers, device secrets, encryption keys, pairing codes, and recovery codes.</li>
+            <li>Website HTML metadata used to discover declared favicons when the browser does not already provide one.</li>
+          </ul>
+          <p>The extension does not intentionally collect names, postal addresses, email addresses, payment information, health information, personal communications, keystrokes, mouse movement, or precise geolocation.</p>
+
+          <h2>3. Data Sent to the Hosted Backend</h2>
+          <p>When you use the hosted backend, Scrybe sends the following data to provide sync:</p>
+          <ul>
+            <li>Encrypted bookmark and history records.</li>
+            <li>Anonymous account and device identifiers.</li>
+            <li>Device names shown in the paired browser list, such as a browser/platform label.</li>
+            <li>Device authentication material required to authorize sync requests.</li>
+            <li>Pairing and recovery records, including hashed or encrypted material needed to pair or recover a browser.</li>
+            <li>Operational request metadata that may be produced by normal web server logs, such as IP address, request time, HTTP method, path, response status, and user agent.</li>
+          </ul>
+
+          <h2>4. Encryption and Server Access</h2>
+          <p>Scrybe uses client-side encryption for synced bookmark and history content. The hosted backend stores encrypted payloads and does not receive the plaintext master key needed to read synced content. This means the hosted backend is intended to be unable to decrypt your synced bookmark and history data.</p>
+          <p>Some metadata is still necessary for operation, including account IDs, device IDs, timestamps, sync versioning, and server logs. This metadata may be visible to the hosted backend operator.</p>
+
+          <h2>5. Favicon Discovery</h2>
+          <p>When saving a bookmark or history entry, Scrybe may use the favicon already provided by the browser. If no favicon is available, the extension may fetch the visited page to read declared icon metadata such as <code>&lt;link rel="icon"&gt;</code>. This processing is used to identify a favicon and is not used for advertising or behavioral profiling.</p>
+
+          <h2>6. Account Model, Pairing, and Recovery</h2>
+          <p>Scrybe accounts are anonymous and do not require an email address, username, or password. Pairing codes are temporary and are used to add another browser to the same account. Recovery codes are generated when an account is created and should be stored safely by the user. Replacing a recovery code invalidates the previous recovery code.</p>
+
+          <h2>7. Self-Hosted Backends</h2>
+          <p>The extension allows users to change the backend URL. If you use a self-hosted backend or a backend operated by another party, your data is transmitted to that backend instead of the hosted Shadoweb backend. Shadoweb does not control third-party or self-hosted deployments and is not responsible for their security practices, uptime, logs, retention, support, or legal compliance.</p>
+
+          <h2>8. Data Retention</h2>
+          <p>Encrypted sync records are retained by the hosted backend while the anonymous account exists and while the records have not been deleted through the extension. Deleted bookmarks and history entries are removed from active sync storage. Operational logs may be retained for security, abuse prevention, debugging, and service reliability for a limited period determined by hosting and operational needs.</p>
+
+          <h2>9. Data Sharing</h2>
+          <p>Shadoweb does not sell Scrybe user data. Data may be processed by infrastructure providers used to host and operate the service. Data may also be disclosed if required by law, to protect the security of the service, or to investigate abuse.</p>
+
+          <h2>10. Security</h2>
+          <p>Scrybe is built around client-side encryption and authenticated device access. No system can be guaranteed perfectly secure. You are responsible for keeping your browsers, devices, extension installation, pairing codes, and recovery code secure.</p>
+
+          <h2>11. Children</h2>
+          <p>Scrybe is not directed to children under the age required by applicable law. The service does not knowingly collect personal information from children.</p>
+
+          <h2>12. Your Choices</h2>
+          <p>You can delete bookmarks and history entries in the extension. You can clear Scrybe history, disconnect paired browsers, replace your recovery code, or change the backend URL. If you stop using the hosted backend and configure a different backend, future sync requests will be sent to the configured backend.</p>
+
+          <h2>13. Changes to This Policy</h2>
+          <p>This Privacy Policy may be updated as Scrybe changes. Material updates will be reflected by changing the "Last updated" date on this page.</p>
+
+          <h2>14. Contact</h2>
+          <p>For questions about this Privacy Policy or support for the hosted Scrybe service, use the <a href="/support/">Scrybe support page</a>.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-row">
+        <a class="brand" href="/">
+          <img src="/assets/scrybe-128.png" alt="">
+          <span>Scrybe</span>
+        </a>
+        <div class="footer-links">
+          <a href="/privacy/">Privacy</a>
+          <a href="/support/">Support</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

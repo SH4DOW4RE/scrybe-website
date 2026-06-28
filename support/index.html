@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Support - Scrybe</title>
+    <meta name="description" content="Request support for the Scrybe extension and hosted Scrybe backend.">
+    <link rel="icon" href="/assets/scrybe-128.png">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="/">
+          <img src="/assets/scrybe-128.png" alt="">
+          <span>Scrybe</span>
+        </a>
+        <div class="nav-links">
+          <a href="/#features">Features</a>
+          <a href="/#self-host">Self-hosting</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="/support/">Support</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <span class="eyebrow">Support</span>
+        <h1>Get help with Scrybe.</h1>
+        <p class="lead">Use this page for support with the Scrybe extension and the hosted Shadoweb backend. Self-hosted deployment work is outside the supported scope.</p>
+      </section>
+
+      <section class="support">
+        <div class="support-grid">
+          <aside class="support-panel">
+            <h2>Support scope</h2>
+            <div class="scope-list">
+              <div class="scope-item">
+                <strong>Included</strong>
+                <span>Extension bugs, browser compatibility issues, pairing and recovery problems, sync behavior, and hosted backend availability.</span>
+              </div>
+              <div class="scope-item">
+                <strong>Included</strong>
+                <span>Questions about privacy, account recovery, disconnecting browsers, or changing the backend URL in the extension.</span>
+              </div>
+              <div class="scope-item">
+                <strong>Not included</strong>
+                <span>Deploying, debugging, securing, or maintaining Scrybe on hardware or infrastructure that Shadoweb does not control.</span>
+              </div>
+            </div>
+          </aside>
+
+          <section class="support-panel">
+            <h2>Request support</h2>
+            <p class="muted">This form opens an email draft with the details you provide. Do not include recovery codes, device secrets, private keys, or sensitive browsing content.</p>
+            <form class="support-form" action="mailto:support@shadoweb.fr" method="post" enctype="text/plain">
+              <label>
+                Email address
+                <input name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+              </label>
+              <label>
+                Support area
+                <select name="area" required>
+                  <option value="">Select an area</option>
+                  <option>Browser extension</option>
+                  <option>Hosted backend</option>
+                  <option>Pairing or recovery</option>
+                  <option>Privacy or data handling</option>
+                  <option>Other supported issue</option>
+                </select>
+              </label>
+              <label>
+                Browser and platform
+                <input name="environment" placeholder="Chrome 126 on Windows, Firefox on Android, etc.">
+              </label>
+              <label>
+                Description
+                <textarea name="description" placeholder="Explain what happened, what you expected, and any visible error message." required></textarea>
+              </label>
+              <p class="support-note">Support is provided for the extension and Shadoweb-controlled backend only. Requests to deploy or administer Scrybe on private hardware may be declined.</p>
+              <button class="button primary" type="submit">Open support email</button>
+            </form>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-row">
+        <a class="brand" href="/">
+          <img src="/assets/scrybe-128.png" alt="">
+          <span>Scrybe</span>
+        </a>
+        <div class="footer-links">
+          <a href="/privacy/">Privacy</a>
+          <a href="/support/">Support</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

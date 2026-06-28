@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scrybe - Private bookmark and history sync</title>
+    <meta name="description" content="Scrybe privately syncs bookmarks and browsing history across Chrome, Firefox, and compatible browsers with client-side encryption.">
+    <link rel="icon" href="/assets/scrybe-128.png">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="/">
+          <img src="/assets/scrybe-128.png" alt="">
+          <span>Scrybe</span>
+        </a>
+        <div class="nav-links">
+          <a href="/#features">Features</a>
+          <a href="/#self-host">Self-hosting</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="/support/">Support</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <span class="eyebrow">Encrypted before it leaves your browser</span>
+          <h1>Private bookmark and history sync across browsers.</h1>
+          <p class="lead">Scrybe keeps your bookmarks and browsing history available across Chrome, Firefox, and compatible browsers without giving the server access to the content it stores.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#install">Get Scrybe</a>
+            <a class="button" href="#self-host">Use your own backend</a>
+          </div>
+          <div class="trust-row" aria-label="Scrybe highlights">
+            <span>No email or password required</span>
+            <span>Pair browsers with temporary codes</span>
+            <span>Change the sync backend URL anytime</span>
+          </div>
+        </div>
+
+        <div class="product-shot" aria-label="Scrybe extension preview">
+          <div class="popup">
+            <div class="popup-top">
+              <div>
+                <h2>Scrybe</h2>
+                <div class="muted">Connected: acct_3f93d8a2...</div>
+              </div>
+              <button class="sync-button" type="button">Sync</button>
+            </div>
+            <div class="tabs" aria-hidden="true">
+              <span class="active">Bookmarks</span>
+              <span>History</span>
+              <span>Settings</span>
+            </div>
+            <span class="save">Save current tab</span>
+            <div class="popup-list">
+              <div class="popup-item">
+                <span class="favicon">S</span>
+                <div>
+                  <div class="popup-title">Shadoweb dashboard</div>
+                  <div class="popup-url">https://shadoweb.fr</div>
+                </div>
+                <span class="mini-button">Delete</span>
+              </div>
+              <div class="popup-item">
+                <span class="favicon" style="background:#2d70bf">P</span>
+                <div>
+                  <div class="popup-title">Python 3.14 free-threading notes</div>
+                  <div class="popup-url">https://docs.python.org/3.14/</div>
+                </div>
+                <span class="mini-button">Delete</span>
+              </div>
+              <div class="popup-item">
+                <span class="favicon" style="background:#d85d4d">M</span>
+                <div>
+                  <div class="popup-title">WebExtensions reference</div>
+                  <div class="popup-url">https://developer.mozilla.org/</div>
+                </div>
+                <span class="mini-button">Delete</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="section-heading">
+          <h2>Built for private, practical sync.</h2>
+          <p>Scrybe focuses on the workflows people expect from browser sync, while keeping the security model simple: clients encrypt and decrypt, the backend stores opaque encrypted records.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>Bookmarks with real metadata</h3>
+            <p>Save the current page with its URL, title, and favicon. Long titles stay readable in the popup without losing the complete encrypted record.</p>
+          </article>
+          <article class="card">
+            <h3>Automatic history capture</h3>
+            <p>Visited pages are saved automatically. Clicking a history entry opens it in a new tab, matching normal browser behavior.</p>
+          </article>
+          <article class="card">
+            <h3>Cross-browser accounts</h3>
+            <p>Create an anonymous account once, then pair Chrome, Firefox, and compatible browsers using short-lived pairing codes.</p>
+          </article>
+          <article class="card">
+            <h3>Recovery code included</h3>
+            <p>Scrybe generates a recovery code when an account is created, so users can recover access if every browser disconnects.</p>
+          </article>
+          <article class="card">
+            <h3>Device control</h3>
+            <p>See paired browsers in settings and disconnect any browser that should no longer be allowed to sync.</p>
+          </article>
+          <article class="card">
+            <h3>Backend choice</h3>
+            <p>The extension settings include the backend URL. Use the hosted Shadoweb API or point Scrybe at infrastructure you control.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="self-host" class="section">
+        <div class="split">
+          <div class="section-heading">
+            <span class="eyebrow">Self-hostable by design</span>
+            <h2>Use Scrybe with your own backend.</h2>
+            <p>The official hosted API is the easiest path for most users, but Scrybe does not lock sync to a single server. If you operate your own backend, change the backend URL in the extension settings and keep using the same client-side encryption model.</p>
+          </div>
+          <div class="code-card">
+            <h3>Change the sync endpoint</h3>
+            <p class="muted">In the extension popup, open Settings and replace the backend URL with your own Scrybe-compatible API endpoint.</p>
+            <code>https://scrybe-api.shadoweb.fr
+
+https://scrybe.example.com</code>
+          </div>
+        </div>
+      </section>
+
+      <section id="install" class="section">
+        <div class="split">
+          <div class="section-heading">
+            <h2>How Scrybe connects browsers.</h2>
+            <p>No username, email, or password is required. Pairing is designed for browser-to-browser setup, while recovery codes are for restoring an account when no paired browser is available.</p>
+          </div>
+          <div class="steps">
+            <article class="step">
+              <h3>Create a new account</h3>
+              <p>The extension creates an anonymous account, generates local encryption keys, and shows a recovery code to save.</p>
+            </article>
+            <article class="step">
+              <h3>Pair another browser</h3>
+              <p>Use a temporary pairing code from an already connected browser to sync another browser into the same account.</p>
+            </article>
+            <article class="step">
+              <h3>Recover when needed</h3>
+              <p>If the extension disconnects everywhere, enter the saved recovery code to reconnect a browser.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="cta-inner">
+          <div>
+            <h2>Private sync without server-side secrets.</h2>
+            <p class="lead">Bookmarks and history sync across browsers, while the backend only stores encrypted data.</p>
+          </div>
+          <a class="button primary" href="/support/">Get support</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-row">
+        <a class="brand" href="/">
+          <img src="/assets/scrybe-128.png" alt="">
+          <span>Scrybe</span>
+        </a>
+        <div class="footer-links">
+          <a href="/privacy/">Privacy</a>
+          <a href="/support/">Support</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
