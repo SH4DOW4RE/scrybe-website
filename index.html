@@ -16,9 +16,11 @@
           <span>Scrybe</span>
         </a>
         <div class="nav-links">
+          <a href="/#purpose">Purpose</a>
           <a href="/#features">Features</a>
           <a href="/#self-host">Self-hosting</a>
           <a href="/privacy/">Privacy</a>
+          <a href="/terms/">Terms</a>
           <a href="/support/">Support</a>
         </div>
       </nav>
@@ -29,7 +31,7 @@
         <div>
           <span class="eyebrow">Encrypted before it leaves your browser</span>
           <h1>Private bookmark and history sync across browsers.</h1>
-          <p class="lead">Scrybe keeps your bookmarks and browsing history available across Chrome, Firefox, and compatible browsers without giving the server access to the content it stores.</p>
+          <p class="lead">Scrybe is a browser extension and hosted sync service for privately saving and synchronizing bookmarks and browsing history across Chrome, Firefox, and compatible browsers. Its purpose is to let a user keep the same encrypted bookmark and history library across their own browsers, while preventing the hosted backend from reading the synced content.</p>
           <div class="hero-actions">
             <a class="button primary" href="#install">Get Scrybe</a>
             <a class="button" href="#self-host">Use your own backend</a>
@@ -83,6 +85,29 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+
+      <section id="purpose" class="section purpose-section">
+        <div class="section-heading">
+          <span class="eyebrow">Application purpose</span>
+          <h2>What Scrybe does.</h2>
+          <p>Scrybe provides encrypted bookmark and browsing history sync for browser extension users. The extension saves page URLs, titles, favicons, and visit timestamps locally, encrypts synced records in the browser, and sends only encrypted sync data to the configured backend.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>For users</h3>
+            <p>Use Scrybe to access your saved bookmarks and recent browsing history from your own paired browsers without creating an email/password account.</p>
+          </article>
+          <article class="card">
+            <h3>For sync</h3>
+            <p>The hosted backend stores encrypted records and device metadata needed to synchronize browsers. It is not designed to decrypt bookmark or history content.</p>
+          </article>
+          <article class="card">
+            <h3>For operators</h3>
+            <p>Advanced users can configure the extension to use a Scrybe-compatible backend they operate, because the backend URL is editable in extension settings.</p>
+          </article>
         </div>
       </section>
 
@@ -178,6 +203,7 @@ https://scrybe.example.com</code>
         </a>
         <div class="footer-links">
           <a href="/privacy/">Privacy</a>
+          <a href="/terms/">Terms</a>
           <a href="/support/">Support</a>
         </div>
       </div>
