@@ -1,7 +1,7 @@
 name = "scrybe-website"
 # Set this to today's date
-compatibility_date = "2026-07-05"
+compatibility_date = "2026-07-06"
 
 [assets]
-directory = "."
+directory = "./public"
 html_handling = "drop-trailing-slash"
